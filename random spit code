@@ -1,0 +1,20 @@
+// Define the digital pin connected to the LED
+const int ledPin = 13; // You can use a different pin if needed
+
+void setup() {
+  // Set up the initial configuration
+  pinMode(ledPin, OUTPUT); // Configure the LED pin as an output
+}
+
+void loop() {
+  // Turn the LED on (HIGH) for 100 milliseconds (1/10th of a second)
+  digitalWrite(ledPin, HIGH);
+  delay(100);
+
+  // Turn the LED off (LOW)
+  digitalWrite(ledPin, LOW);
+
+  // Generate a random delay between 300 milliseconds and 20000 milliseconds (20 seconds)
+  int randomDelay = random(300, 20000);
+  delay(randomDelay);
+}
